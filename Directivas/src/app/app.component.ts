@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Directivas';
+  listStudents = [
+    {nombre: "Carlos", estado: "Regular"},
+    {nombre: "Clara", estado: "Nelson"},
+    {nombre: "Antonio", estado: "Regular"},
+    {nombre: "Nidia", estado: "Nelson"},
+    {nombre: "Nicolas", estado: "Libre"},
+  ];
+  mostrar = true;
+
+  toogle(): void {
+    this.mostrar = !this.mostrar;
+  }
 }
